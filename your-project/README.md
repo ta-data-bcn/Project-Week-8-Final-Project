@@ -1,16 +1,15 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Title of My Project
-*[Your Name]*
+# GOING TO A MUSIC FESTIVAL
+*Josep Foradada* 
 
-*[Your Cohort, Campus & Date]*
+*Data Analytics June 2019*
 
 ## Content
 - [Project Description](#project-description)
 - [Hypotheses / Questions](#hypotheses-/-questions)
 - [Dataset](#dataset)
 - [Cleaning](#cleaning)
-- [Analysis](#analysis)
 - [Model Training and Evaluation](#model-training-and-evaluation)
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
@@ -21,71 +20,61 @@
 <a name="project-description"></a>
 
 ## Project Description
-Write a short description of your project: 3-5 sentences about what your project is about, why you chose this topic (if relevant), and what you are trying to show. 
+This project had 2 main objectives, first of all to get a recomendation from spotify based on all my playlist and at the same time, compare songs from a music festival and check if they match with the bigger cluster generated from mines.
 
 <a name="hypotheses-/-questions"></a>
 
 ## Hypotheses / Questions
-* What data/business/research/personal question you would like to answer? 
-* What is he context for the question and the scientific or business application? 
-* What are the hypotheses you would like to test in order to answer your question?  
-Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
+* Will be able to clusterify the songs from my playlist into music styles?
+* Is it possible to request specific recomendations to spotify? 
+* Would be a great idea to go to next music festival after the bootcamp?
 
 <a name="dataset"></a>
 
 ## Dataset
-* Where did you get your data? If you downloaded a dataset (either public or private), describe where you downloaded it and include the command to load the dataset.
-* Did you build your own datset? If so, did you use an API? If so, provide the scripts in your repo.
-* For all types of datasets, provide a description of the size, complexity, and data types included in your dataset, as well as a schema of the tables if necessary.
-* If the question cannot be answered with the available data, why not? What data would you need to answer it better?
+* For this project all data was request from SPOTIFY API using the library spotipy. Spotipy recommendations function has a bug that splits the variables of the request into characters joined by commas. This was really difficult to find due to cannot see the request url using python. Finally I had to modify the function inside the library to get the recommendations request. 
 
 <a name="cleaning"></a>
 
 ## Cleaning
-Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did, etc, as well as your thinking process.
+The main step here is twrangle and normalize data from requests. The answers are huge json files, with several levels of jsons or list of dictionaries
 
-<a name="analysis"></a>
-
-## Analysis
-* Overview the general steps you will go through to analyze your data in order to test your hypothesis.
-* Document each step of your data exploration and analysis.
-* Include charts to demonstrate the effect of your work. 
-* If you use ML in your final project, describe your feature selection process.
 
 <a name="model-training-and-evaluation"></a>
 
 ## Model Training and Evaluation
-*Include this section only if you chose to include ML in your project.*
-* Describe how you trained your model, the results you obtained, and how you evaluated those results.
-
+Model used is the K-Means clustering. I would prefer using DBScan because will be scalable to any user playlists. But was not able to find the correct epsilon, neither the min_samples. So I used K-Means and tested with diferent number of clusters since i was able to split classic music from opera. All other clusters are so similar, probably because there is no such a much difference between Pop, Indie, Rock or Folk.
+The same model was used to analyze the Gigante Music Festival, here I decided to try 3 cluster because it sells that they do Pop, Indie and Rock
 <a name="conclusion"></a>
 
 ## Conclusion
-* Summarize your results. What do they mean?
-* What can you say about your hypotheses?
-* Interpret your findings in terms of the human-understandable question you try to answer.
+
+The main conclusion is that spotify song features are not enough relevant to label songs just with that parameters
 
 <a name="future-work"></a>
 
 ## Future Work
-Address any questions you were unable to answer, or any next steps or future extensions to your project.
+First of all I will contact to spotipy to inform for the bug. After this I would like to improve clustering using other methods or try to analyze the segments, beats,etc for each song to see if could be a more accurate clustering without using labels.
 
 <a name="workflow"></a>
 
 ## Workflow
-Outline the workflow you used in your project. What were the steps?
-How will you test the success of our analysis or algorithm?
+-Get the Data
+-Wrangling data
+
 
 <a name="organization"></a>
 
 ## Organization
-How did you organize yourself? Did you use any tools?
+
+Usually when I work alone I prefer to draw my schemas on paper using a pencil. I visualize it much better, than into any board. Probably because of my design and 3d background, I use to do sketches and storyboards. On the other hand I can handle all that information and structure also in my brain.
 
 <a name="links"></a>
 
 ## Links
-Include the links to your repository, slides and trello. Feel free to include any other links associated to your project. 
+I want to share this medium article where I get the idea for the polar plots:
+https://towardsdatascience.com/profiling-my-favorite-songs-on-spotify-through-clustering-33fee591783d
 
-[Repository](https://github.com/)  
-[Slides](https://slides.com/)  
-[Trello](https://trello.com/en)  
+[Repository](https://github.com/josepforadada/Project-Week-8-Final-Project)  
+[Slides](https://slides.com/josepforadada/deck-6#/)  
+[Trello](https://trello.com/b/qJ7IIpgt/final-project)  
