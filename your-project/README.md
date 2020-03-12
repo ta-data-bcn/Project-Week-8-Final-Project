@@ -1,7 +1,7 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Title of My Project
-*[Your Name]*
+# Size & Intelligence in Dogs
+*[Santiago Mougán]*
 
 *[Your Cohort, Campus & Date]*
 
