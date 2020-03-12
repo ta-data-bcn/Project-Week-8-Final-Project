@@ -104,11 +104,28 @@ Describe your full process of data wrangling and cleaning. Document why you chos
 #### Part 1 - Twitter Quantitative & Content Analysis #### 
 ##### Focus on positive tweets #####
 
+- 2019-11-23 'CyberTruck launch & sales figure' case 
+![CyberTruck launch](https://bitcoinbuss.com/elon-musk-stretches-truth-bragging-about-146k-tesla-cybertruck-orders/ "CyberTruck launch")
+
+<img src="//DataSets/Top_tweets_stock_impact_plot/2019-11-24.png" alt="CyberTruck figure"/>
+
+
+- Model 3 Launch
+![Tesla goes private](https://image.cnbcfm.com/api/v1/image/105381277-musktweet2.png?v=1533661283&w=678&h=381 "Tesla goes private")
+
+<img src="/DataSets/Top_tweets_stock_impact_plot/2018-08-07.png" alt="tweet stock impact" >
+
+
+- 2018-02-07 StarMan Space Launch
+![StarMan Space Launch](https://miro.medium.com/max/1548/1*jtcf9uVon9YW1bvg0gWpDg.png "StarMan Space Launch")
+
+<img src="/DataSets/Top_tweets_stock_impact_plot/2018-02-07.png" alt="StarMan stock impact"/>
+
 ##### Focus on negative tweets #####
 - 2018-07-08 'Tesla goes private' case 
 ![Tesla goes private](https://image.cnbcfm.com/api/v1/image/105381277-musktweet2.png?v=1533661283&w=678&h=381 "Tesla goes private")
 
-![$420 Private](https://raw.githubusercontent.com/Binardino/Project-Week-8-Final-Project/master/DataSets/Top_tweets_stock_impact_plot/2018-08-07.png'"tweet stock impact")
+<img src="/DataSets/Top_tweets_stock_impact_plot/2018-08-07.png" alt="tweet stock impact"/>
 
 - 2018-04-01 'April's Fool Day Bankrupcy Joke' case
 
@@ -118,9 +135,9 @@ yet the stock did not present any specific trend evolution
 ![Tesla goes bankrupt](https://pbs.twimg.com/media/DZwK4dNVoAE6LHi.jpg "Tesla goes bankrupt")
 
 ![Tesla goes bankrupt2](https://images.indianexpress.com/2018/04/elon-musk_tw_759.jpg')
-('https://raw.githubusercontent.com/Binardino/Project-Week-8-Final-Project/master/DataSets/Top_tweets_stock_impact_plot/2018-04-01.png "tweet stock impact")
+(https://raw.githubusercontent.com/Binardino/Project-Week-8-Final-Project/master/DataSets/Top_tweets_stock_impact_plot/2018-04-01.png)
 
-![$420 Private](https://raw.githubusercontent.com/Binardino/Project-Week-8-Final-Project/master/DataSets/Top_tweets_stock_impact_plot/2018-08-07.png "tweet stock impact")
+<img src="/DataSets/Top_tweets_stock_impact_plot/2018-08-07.png" alt="tweet stock impact"/>
 
 #### Part 2 - Car Production History 2010-2020 #### 
 Tesla production has been mainly divided into two phase:
@@ -159,7 +176,7 @@ To compare Prophet predictions, two Models based on different datasets have been
 
 ### Model 2 Stock Prediction based on Car production prediction ###
 #### Car Production VS. Stock prediction 2020-2022 #### 
-![Prophet Car production & Stock Prediction 2020-2022](https://github.com/Binardino/https://github.com/Binardino/Project-Week-8-Final-Project/blob/master/DataSets/Tesla_car_sales/car_production_stock_evolution.png "Prophet Car production & Stock Prediction 2020-2022")
+![Prophet Car production & Stock Prediction 2020-2022](https://github.com/Binardino/Project-Week-8-Final-Project/blob/master/DataSets/Tesla_car_sales/car_production_stock_evolution.png "Prophet Car production & Stock Prediction 2020-2022")
 
 ## Conclusion
 * Summarize your results. What do they mean?
