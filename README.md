@@ -37,7 +37,8 @@ The project has 3 chapters analyzing the evolution of the stock on 3 metrics :
 	* Did investors reacted strongly to Musk's controversial tweets in 2018-2019 ?
 
 * Second hypothesis : from 2010 to 2018, Tesla has produced a small amount of cars and could not deliver on its ambitious promises.
-My hypothesis is that, for many years, investors shorted Tesla, not believing on its delivery capabilities. The progressive success of Model 3 in 2018 is the main reason for important spike 
+My hypothesis is that, for many years, investors shorted Tesla, not believing on its delivery capabilities. 
+But the progressive success of Model 3 from late 2017 onwards should greatly impact positively the stock evolution and would be the main reason for important spike 
 	* did the hard launch of Model 3 in 2017, and its important production rise in 2018 impacted positively the stocks ?
 
 * To measure various potential influences over the stock price evolution, other KPIs were taken into account :
@@ -90,15 +91,27 @@ Describe your full process of data wrangling and cleaning. Document why you chos
 
 ### Custom variable created #### 
 
-###Twitter analysis
 - Twitter interactions : sum of all interactions over a tweet (retweets, replies, favourites) - asumption that tweet generating an important amount of interactions convey important piece of information (business related, funny original content, controversies etc. )
 - Scaled Adjusted Close / Scaled Twitter interactions : to plot both evolution of stocks values & Twitter interactions, both variables have been MinMaxScaled to be comparable
+
 
 ## Analysis
 * Overview the general steps you went through to analyze your data in order to test your hypothesis.
 * Document each step of your data exploration and analysis.
 * Include charts to demonstrate the effect of your work.
 * If you used Machine Learning in your final project, describe your feature selection process.
+
+#### Car Production History 2010-2020 #### 
+Tesla production has been mainly divided into two phase:
+- production of Luxury model for premium audience : Model S from 2012 onwards & Model S from 2015 onwards
+- production of mass market Model 3 car from 2017 onwards
+
+* Until 2016, car production relatively low in terms of amount of unit produced = stock grow slowly based 
+* Starting 2018 Q1, Model 3 production started to grow - but did not generated immediate stock spike important spkie in
+
+![Prophet Stock Prediction 2018-2020](https://github.com/Binardino/Project-Week-8-Final-Project/blob/master/DataSets/Tesla_car_sales/car_production_stock_history.png "Car Production History 2010-2020")
+
+
 
 ## Model Training and Evaluation
 Stock prediction based on [Facebook Prophet]('https://facebook.github.io/prophet/docs/saturating_forecasts.html#forecasting-growth') growth prediction model . 
@@ -114,15 +127,18 @@ To compare Prophet predictions, two Models based on different datasets have been
 - Stock Price Model Training & Evaluation based on 2010-2018 stock value to compare them with actual results from 2019-2020
 	* overall growth trend well predicted, even if Tesla last year very important spike in stock value has not been predicted. May be considered an anomaly and is rather hard to predict
 
+### Model 1 Stock Prediction based on previous value ###
+
 #### Prophet Stock Prediction 2018-2020 #### 
-<div style="text-align:center">
 ![Prophet Stock Prediction 2018-2020](https://github.com/Binardino/Project-Week-8-Final-Project/blob/master/DataSets/Stock_prediction_PNG/Prophet_stock_prediction_2018-2020.png "Prophet Stock Prediction 2018-2020")
-</div>
+
 
 #### Prophet Stock Prediction 2020-2022 #### 
-<div style="text-align:center">
 ![Prophet Stock Prediction 2020-2022](https://github.com/Binardino/Project-Week-8-Final-Project/blob/master/DataSets/Stock_prediction_PNG/Prophet_stock_prediction_2020_2022.png "Prophet Stock Prediction 2020-2022")
-</div>
+
+### Model 2 Stock Prediction based on Car production prediction ###
+#### Car Production VS. Stock prediction 2020-2022 #### 
+![Prophet Car production & Stock Prediction 2020-2022](https://github.com/Binardino/https://github.com/Binardino/Project-Week-8-Final-Project/blob/master/DataSets/Tesla_car_sales/car_production_stock_evolution.png "Prophet Car production & Stock Prediction 2020-2022")
 
 ## Conclusion
 * Summarize your results. What do they mean?
