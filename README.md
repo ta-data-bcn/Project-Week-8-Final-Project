@@ -114,9 +114,15 @@ To compare Prophet predictions, two Models based on different datasets have been
 - Stock Price Model Training & Evaluation based on 2010-2018 stock value to compare them with actual results from 2019-2020
 	* overall growth trend well predicted, even if Tesla last year very important spike in stock value has not been predicted. May be considered an anomaly and is rather hard to predict
 
-![Prophet Stock Prediction 2018-2020](https://github.com/Binardino/Project-Week-8-Final-Project/blob/master/DataSets/Stock_prediction_PNG/Prophet_stock_prediction_2018-2020.png "Title is optional")
+#### Prophet Stock Prediction 2018-2020 #### 
+<div style="text-align:center">
+![Prophet Stock Prediction 2018-2020](https://github.com/Binardino/Project-Week-8-Final-Project/blob/master/DataSets/Stock_prediction_PNG/Prophet_stock_prediction_2018-2020.png "Prophet Stock Prediction 2018-2020")
+</div>
 
-![Prophet Stock Prediction 2020-2022](https://github.com/Binardino/Project-Week-8-Final-Project/blob/master/DataSets/Stock_prediction_PNG/Prophet_stock_prediction_2020_2022.png "Title is optional")
+#### Prophet Stock Prediction 2020-2022 #### 
+<div style="text-align:center">
+![Prophet Stock Prediction 2020-2022](https://github.com/Binardino/Project-Week-8-Final-Project/blob/master/DataSets/Stock_prediction_PNG/Prophet_stock_prediction_2020_2022.png "Prophet Stock Prediction 2020-2022")
+</div>
 
 ## Conclusion
 * Summarize your results. What do they mean?
