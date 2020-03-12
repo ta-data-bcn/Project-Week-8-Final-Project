@@ -1,7 +1,7 @@
 {"intents": [
         {"tag": "greeting",
          "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "responses": ["Hello, great day today.", "Good to see you again", "Hi there, how can I help?"],
          "context": [""]
         },
         {"tag": "goodbye",
@@ -20,13 +20,13 @@
          "context": [""]
         },
         {"tag": "options",
-         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered", "Can you help me?"],
          "responses": ["I can show you some products you might like."],
          "context": [""]
         },
         {"tag": "products",
          "patterns": ["Sure show me the products.", "Offer me some products.", "That would be cool", "Cool", "Let's do that" ],
-         "responses": ["To show you the most popular products, please tell me your name and where you are from"],
+         "responses": ["To show you the most popular products, please tell me your name!"],
          "context": [""]
         }
    ]
