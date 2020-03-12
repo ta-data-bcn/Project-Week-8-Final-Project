@@ -20,18 +20,25 @@
 
 ## Project Description
 This project aims at analyzing Tesla stock evolution from 2010 onwards (IPO on January 2010).
+Tesla stock value has evolved following an unusual trend, slow growth from 2010-2018, and sudden spike from 2018 to 2020.
+Tesla stock has known very high volatilty, and has been the one [most-shorted US stock]('https://markets.businessinsider.com/news/stocks/tesla-stock-most-shorted-companies-us-traders-betting-against-apple-2020-2-1028873641'), meaning that many investors bet against it.
+
 The project has 3 chapters analyzing the evolution of the stock on 3 metrics :
 - Elon Musk's past tweets habits and how they may have had a strong impact on Tesla's stock value
 - Tesla car production history and future previsions on its stock evolution
 - General trends of stocks & competitors from 2010 onwards
 
 ## Hypotheses / Questions
-* What data/business/research/personal question you would like to answer?
-
 * My original project was to measure the impact of past Musk tweets, especially from 2018 onwards, to measure their impact on the actual stock value :
 	* Do the stock markets react strongly to Musk tweets ?
+	* Do Musk tweet promises to deliver new innovative products impact positively the stocks ?
 	* Does Musk influence greatly the stock prices when tweeting - general or Tesla related - information ?
 	* Do his Twitter controversies harm badly Tesla's stock evolution ?
+	* Did investors reacted strongly to Musk's controversial tweets in 2018-2019 ?
+
+* Second hypothesis : from 2010 to 2018, Tesla has produced a small amount of cars and could not deliver on its ambitious promises.
+My hypothesis is that, for many years, investors shorted Tesla, not believing on its delivery capabilities. The progressive success of Model 3 in 2018 is the main reason for important spike 
+	* did the hard launch of Model 3 in 2017, and its important production rise in 2018 impacted positively the stocks ?
 
 * To measure various potential influences over the stock price evolution, other KPIs were taken into account :
 	* Car production history from 2010 onwards
@@ -84,8 +91,8 @@ Describe your full process of data wrangling and cleaning. Document why you chos
 ### Custom variable created #### 
 
 ###Twitter analysis
-#### Twitter interactions #### 
-	sum of all interactions over a tweet (retweets, replies, favourites) - asumption that tweet generating an important amount of interactions convey important piece of information (business related, funny original content, controversies etc. )
+- Twitter interactions : sum of all interactions over a tweet (retweets, replies, favourites) - asumption that tweet generating an important amount of interactions convey important piece of information (business related, funny original content, controversies etc. )
+- Scaled Adjusted Close / Scaled Twitter interactions : to plot both evolution of stocks values & Twitter interactions, both variables have been MinMaxScaled to be comparable
 
 ## Analysis
 * Overview the general steps you went through to analyze your data in order to test your hypothesis.
@@ -104,17 +111,23 @@ To compare Prophet predictions, two Models based on different datasets have been
 	 * Evolution of Car production VS. Stock price for 2020-2022
 	 * Evolution of Stock price for 2020-2022 based on previous values
 
-
 - Stock Price Model Training & Evaluation based on 2010-2018 stock value to compare them with actual results from 2019-2020
 	* overall growth trend well predicted, even if Tesla last year very important spike in stock value has not been predicted. May be considered an anomaly and is rather hard to predict
 
+![Prophet Stock Prediction 2018-2020](https://github.com/Binardino/Project-Week-8-Final-Project/blob/master/DataSets/Stock_prediction_PNG/Prophet_stock_prediction_2018-2020.png "Title is optional")
+
+![Prophet Stock Prediction 2020-2022](https://github.com/Binardino/Project-Week-8-Final-Project/blob/master/DataSets/Stock_prediction_PNG/Prophet_stock_prediction_2020_2022.png "Title is optional")
+
 ## Conclusion
 * Summarize your results. What do they mean?
+
 * What can you say about your hypotheses?
+
 * Interpret your findings in terms of the questions you try to answer.
 
 ## Future Work
-Address any questions you were unable to answer, or any next steps or future extensions to your project.
+- Develop function to measure precise Stock price value on several timedelta over a Tweet date to measure its impact
+- Scrap Twitter follower data to measure evolution of Musk's follower amounts and their impact over global Twitter interaction KPI
 
 ## Workflow
 My workflow consisted on working sucessively on my 3 chapters to measure, for each part, the correlation and the potential impact on the stock.
