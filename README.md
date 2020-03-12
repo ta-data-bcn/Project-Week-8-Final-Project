@@ -102,22 +102,25 @@ Describe your full process of data wrangling and cleaning. Document why you chos
 * If you used Machine Learning in your final project, describe your feature selection process.
 
 #### Part 1 - Twitter Quantitative & Content Analysis #### 
-- 2018-07-08 'Tesla goes private' case 
-![Tesla goes private]('https://image.cnbcfm.com/api/v1/image/105381277-musktweet2.png?v=1533661283&w=678&h=381' "Tesla goes private")
+##### Focus on positive tweets #####
 
-![$420 Private]('https://raw.githubusercontent.com/Binardino/Project-Week-8-Final-Project/master/DataSets/Top_tweets_stock_impact_plot/2018-08-07.png' "tweet stock impact")
+##### Focus on negative tweets #####
+- 2018-07-08 'Tesla goes private' case 
+![Tesla goes private](https://image.cnbcfm.com/api/v1/image/105381277-musktweet2.png?v=1533661283&w=678&h=381 "Tesla goes private")
+
+![$420 Private](https://raw.githubusercontent.com/Binardino/Project-Week-8-Final-Project/master/DataSets/Top_tweets_stock_impact_plot/2018-08-07.png'"tweet stock impact")
 
 - 2018-04-01 'April's Fool Day Bankrupcy Joke' case
 
 Following tensions with investors and short-sellers, Musk published two tweets stating that Tesla is going bankrupt.
 Even if it has been made in a fun fashion, it is a kind of abysmal message for potential investors ;
 yet the stock did not present any specific trend evolution  
-![Tesla goes bankrupt]('https://pbs.twimg.com/media/DZwK4dNVoAE6LHi.jpg' "Tesla goes bankrupt")
+![Tesla goes bankrupt](https://pbs.twimg.com/media/DZwK4dNVoAE6LHi.jpg "Tesla goes bankrupt")
 
-![Tesla goes bankrupt2]('https://images.indianexpress.com/2018/04/elon-musk_tw_759.jpg')
-('https://raw.githubusercontent.com/Binardino/Project-Week-8-Final-Project/master/DataSets/Top_tweets_stock_impact_plot/2018-04-01.png' "tweet stock impact")
+![Tesla goes bankrupt2](https://images.indianexpress.com/2018/04/elon-musk_tw_759.jpg')
+('https://raw.githubusercontent.com/Binardino/Project-Week-8-Final-Project/master/DataSets/Top_tweets_stock_impact_plot/2018-04-01.png "tweet stock impact")
 
-![$420 Private]('https://raw.githubusercontent.com/Binardino/Project-Week-8-Final-Project/master/DataSets/Top_tweets_stock_impact_plot/2018-08-07.png' "tweet stock impact")
+![$420 Private](https://raw.githubusercontent.com/Binardino/Project-Week-8-Final-Project/master/DataSets/Top_tweets_stock_impact_plot/2018-08-07.png "tweet stock impact")
 
 #### Part 2 - Car Production History 2010-2020 #### 
 Tesla production has been mainly divided into two phase:
