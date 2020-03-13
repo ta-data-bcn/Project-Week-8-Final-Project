@@ -126,9 +126,9 @@ what are his Twitter habits ?
 is there any kind of seasonality in his tweet publications ?
 do the amount of tweets evolve over time ?
 
-<img src="//Twitter_data\Twitter Analytics PNG/evolution_daily_tweets_Musk.png" alt="evolution_daily_tweets_Musk figure"/>
+<img src="//DataSets/Twitter_data/Twitter Analytics PNG/evolution_daily_tweets_Musk.png" alt="evolution_daily_tweets_Musk figure"/>
 
-<img src="//DataSets/Top_tweets_stock_impact_plot/twitter_seasonality.png" alt="Twitter seasonality"/>
+<img src="//DataSets/Twitter_data/Twitter Analytics PNG/twitter_seasonality.png" alt="Twitter seasonality"/>
 
 The amount of tweets grows constantly from 2012 onwards ; peaks of Twitter activity in 2017, mid 2018 & late 2019
 
@@ -245,9 +245,16 @@ Prophet takes only two variables : 'ds' (for Date - here Quarters from 2010 onwa
 - Repo structure :
 1. Datasets (i.e. rawa data in CSV & exported PNGs)
 	* Stock_raw_data
+		* List of CSV and stocks for studied car & tech companies
 	* Tesla_car_sales
+		* Datasets of car sales (2 CSVs & an imported ZIP)
+		* plot PNGs from Notebook 
 	* Top_tweets_stock_impact_plot
+		* 200 PNGs of stock evolution on delta 10-day period around tweet publication date
 	* Twitter data
+	* Stock_prediction_PNG :
+		* Prophet_stock_prediction_2018-2020.png
+		* Prophet_stock_prediction_2020-2022.png
 
 2. Notebooks
     * *Folder* Scraping & Dataframe creations notebooks
