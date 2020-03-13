@@ -64,15 +64,15 @@ The relationship between height, weight and intelligence is not clear, so furthe
 
 ## Organization
 Trello:
-	* List of general brainstorm ideas
-	* To do list
-	* Tasks in progress
-	* Tasks already done
+* List of general brainstorm ideas
+* To do list
+* Tasks in progress
+* Tasks already done
 Github repository:
-	* Original datasets on .csv format
-	* Jupyter notebook file with all the coding
-	* Graph example image
-	* ReadMe
+* Original datasets on .csv format
+* Jupyter notebook file with all the coding
+* Graph example image
+* ReadMe
 
 ## Links
 
