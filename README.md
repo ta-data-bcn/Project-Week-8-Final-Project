@@ -126,9 +126,9 @@ what are his Twitter habits ?
 is there any kind of seasonality in his tweet publications ?
 do the amount of tweets evolve over time ?
 
-<img src="//DataSets/Twitter_data/Twitter Analytics PNG/evolution_daily_tweets_Musk.png" alt="evolution_daily_tweets_Musk figure"/>
+<img src="/DataSets/Twitter_data/Twitter Analytics PNG/evolution_daily_tweets_Musk.png" alt="evolution_daily_tweets_Musk figure"/>
 
-<img src="//DataSets/Twitter_data/Twitter Analytics PNG/twitter_seasonality.png" alt="Twitter seasonality"/>
+<img src="/DataSets/Twitter_data/Twitter Analytics PNG/twitter_seasonality.png" alt="Twitter seasonality"/>
 
 The amount of tweets grows constantly from 2012 onwards ; peaks of Twitter activity in 2017, mid 2018 & late 2019
 
@@ -142,7 +142,7 @@ Raise of Twitter interactions may be explained by two reasons :
 - 2019-11-23 'CyberTruck launch & sales figure' case 
 ![CyberTruck launch](https://bitcoinbuss.com/elon-musk-stretches-truth-bragging-about-146k-tesla-cybertruck-orders/ "CyberTruck launch")
 
-<img src="//DataSets/Top_tweets_stock_impact_plot/2019-11-24.png" alt="CyberTruck figure"/>
+<img src="/DataSets/Top_tweets_stock_impact_plot/2019-11-24.png" alt="CyberTruck figure"/>
 
 
 - Model 3 Launch
@@ -182,7 +182,6 @@ Tesla production has been mainly divided into two phase:
 * Starting 2018 Q1, Model 3 production started to grow - but did not generated immediate stock spike important spkie in
 
 ![Prophet Stock Prediction 2018-2020](https://github.com/Binardino/Project-Week-8-Final-Project/blob/master/DataSets/Tesla_car_sales/car_production_stock_history.png "Car Production History 2010-2020")
-
 
 
 ## Model Training and Evaluation
