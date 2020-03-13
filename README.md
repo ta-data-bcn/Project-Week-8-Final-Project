@@ -1,6 +1,6 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# TESLA Stock Projection - Based on Car Production, Stock & Twitter Analysis
+# TESLA Stock Projection - Past analysis & future prediction - Based on Twitter Analysis & Car Production
 *[Robin Langlois]*
 
 *[DAFT BARCELONA - Jan-Mar 2020]*
