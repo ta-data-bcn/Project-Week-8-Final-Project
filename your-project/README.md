@@ -1,9 +1,9 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Title of My Project
-*[Your Name]*
+# Data Analysis of a E-Commerce store
+*Kevin Forster*
 
-*[Your Cohort, Campus & Date]*
+*Data Analytics, Barcelona, 13.2.2020*
 
 ## Content
 - [Project Description](#project-description)
@@ -11,62 +11,62 @@
 - [Dataset](#dataset)
 - [Cleaning](#cleaning)
 - [Analysis](#analysis)
-- [Model Training and Evaluation](#model-training-and-evaluation)
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
-- [Workflow](#workflow)
 - [Organization](#organization)
 - [Links](#links)
 
 ## Project Description
-Write a short description of your project: 3-5 sentences about what your project is about, why you chose this topic (if relevant), and what you are trying to show.
+In this project I wanted to do a business analysis of e-commerce store and to define as well as implement new actions. The project started by analysing the data, looking at the cohort and survival analysis by each country
 
 ## Hypotheses / Questions
-* What data/business/research/personal question you would like to answer?
-* What is the context for the question and the possible scientific or business application?
-* What are the hypotheses you would like to test in order to answer your question?  
-Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
+* How can we achieve more profit even though the company is successful?
+* Is each market the same or is there a difference of the customer behaviour?
+* What are the most valuable customers?
+* How can we cluster the customers?
+* Which new actions can be defined to improve our business?
 
 ## Dataset
-* Where did you get your data? If you downloaded a dataset (either public or private), describe where you downloaded it and include the command to load the dataset.
-* Did you build your own datset? If so, did you use an API or a web scraper? PRovide the relevant scripts in your repo.
-* For all types of datasets, provide a description of the size, complexity, and data types included in your dataset, as well as a schema of the tables if necessary.
-* If the question cannot be answered with the available data, why not? What data would you need to answer it better?
+* I used the dataset from Kaggle [Link](https://www.kaggle.com/jr2ngb/superstore-data)
 
 ## Cleaning
-Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did as well as your reasoning behind the process.
+The process of data cleaning was explained in detail in the final paper. You can find the final paper in the following direction: your-project/notebooks/Final_Paper.ipynb [Link](https://github.com/kevforster/Project-Week-8-Final-Project/blob/master/your-project/notebooks/Final_Paper.ipynb)
 
 ## Analysis
-* Overview the general steps you went through to analyze your data in order to test your hypothesis.
-* Document each step of your data exploration and analysis.
-* Include charts to demonstrate the effect of your work.
-* If you used Machine Learning in your final project, describe your feature selection process.
+* Recency, Frequency, Monetary Analysis
+* Unsupervised Learning clustering with KMeans
+* Cohort Analysis
+* Survival Analysis
+* Recommendation System
+* Chatbot
+The analysis is explained in the final paper in detail. You can find the final paper in the following direction: your-project/notebooks/Final_Paper.ipynb [Link](https://github.com/kevforster/Project-Week-8-Final-Project/blob/master/your-project/notebooks/Final_Paper.ipynb)
 
-## Model Training and Evaluation
-*Include this section only if you chose to include ML in your project.*
-* Describe how you trained your model, the results you obtained, and how you evaluated those results.
 
 ## Conclusion
-* Summarize your results. What do they mean?
-* What can you say about your hypotheses?
-* Interpret your findings in terms of the questions you try to answer.
+* The survival and cohort analysis showed a different customer behaviour in the different market. Especially the frequency is different in the markets. Although to achieve higher profit we have to try to achieve a higher frequency of the customers. 
+* E-commerce has the advantage that you know the order history of each customer. Therefore we can use this history to recommend the perfect products to each customer. 
+* A chatbot can be nice support for a more efficient ordering process in e-commerce. Therefore we should make the chatbots as smart as possible to gain a remarkable imporvement for each customer in their ordering process. Unfortunately there are not many smart chatbots implemented yet but I see a lot of potential for the future. 
 
 ## Future Work
-Address any questions you were unable to answer, or any next steps or future extensions to your project.
+This project helped me to understand the work of a data scientist in a daily work. Analysing the data and receiving new insight that improve the business is very valuable that every company needs. Although this project also showed me the potential of chatbots and how they work. So I would like to invest some more time on this topic to really understand how we could gain an impact to customers' ordering process by using chatbots. I love this idea. 
 
-## Workflow
-Outline the workflow you used in your project. What were the steps?
-How did you test the accuracy of your analysis and/or machine learning algorithm?
+
 
 ## Organization
-How did you organize your work? Did you use any tools like a trello or kanban board?
+There are 4 folders:
+* images: contains all the screenshots and images that i used for the final paper
+* CSV: contains all the csv that i used during my analysis. After each step (cohort analysis, recommendation system etc.) i created a new csv.
+* notebooks, I split the notebooks up: 
+- Data cleaning (Base_cleaned_data.ipynb), 
+- Data analysis with RFM KMeans clustering and cohort analysis (RFM.ipynb), 
+- Survival analysis and Recommendation System (Survival_Analysis_Recommendation_system.ipynb)
+- Final paper with all the insights and graphs consolidated. This paper does not contain all the codes but all the insights and graphs. (Final_Paper.ipynb)
+* Chatbot: for this last chapter of the project I created an own folder. In there you will find the Json for the chatbot and all necessary codes in the file chatbot.ipynb
 
-What does your repository look like? Explain your folder and file structure.
 
 ## Links
 Include links to your repository, slides and trello/kanban board. Feel free to include any other links associated with your project.
 
 
-[Repository](https://github.com/)  
-[Slides](https://slides.com/)  
-[Trello](https://trello.com/en)  
+[Repository](https://github.com/kevforster/Project-Week-8-Final-Project/tree/master/your-project)  
+[Slides](https://docs.google.com/presentation/d/1Hl1xUA83V_0pgmEQGNUbdxnrXd7iUZsLCne7AKhhBEA/edit?usp=sharing)  
