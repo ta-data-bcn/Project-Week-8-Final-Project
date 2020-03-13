@@ -147,4 +147,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# My files
+Recommender example.ipynb
+
 # End of https://www.gitignore.io/api/python,windows,jupyternotebooks
