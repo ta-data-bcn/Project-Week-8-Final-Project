@@ -68,6 +68,7 @@ Trello:
 * To do list
 * Tasks in progress
 * Tasks already done
+
 Github repository:
 * Original datasets on .csv format
 * Jupyter notebook file with all the coding
