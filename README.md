@@ -112,12 +112,12 @@ Then what's explained in this file was applied
 My repo has the following folders and structure:
 
 code:
-EDA.ipynb
-Machine Learning.ipynb
-Scaling.ipynb
+* EDA.ipynb
+* Machine Learning.ipynb
+* Scaling.ipynb
 
 datasets:
-heart.csv (original dataset from kaggle)
+*heart.csv (original dataset from kaggle)
 
 This README file
 
