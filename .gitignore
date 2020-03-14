@@ -149,5 +149,7 @@ $RECYCLE.BIN/
 
 # My files
 Recommender example.ipynb
+datasets/correlation_matrix/book_distance.csv
+
 
 # End of https://www.gitignore.io/api/python,windows,jupyternotebooks
