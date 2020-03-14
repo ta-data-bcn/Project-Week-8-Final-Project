@@ -67,7 +67,7 @@ Extract important variables;
 Detect outliers and anomalies;
 Test underlying assumptions
 
-link to [EDA](http://www.google.fr/ "EDA") notebook
+link to [EDA](https://github.com/Zak-ScorpiuS/Project-Week-8-Final-Project/blob/master/code/EDA%20(Exploratory%20Data%20Analysis).ipynb "EDA") notebook
 
 ## Model Training and Evaluation ##
 
