@@ -67,7 +67,7 @@ Extract important variables;
 Detect outliers and anomalies;
 Test underlying assumptions
 
-link to EDA notebook
+link to [EDA](http://www.google.fr/ "EDA") notebook
 
 ## Model Training and Evaluation ##
 
