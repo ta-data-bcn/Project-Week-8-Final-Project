@@ -73,11 +73,11 @@ link to [EDA](https://github.com/Zak-ScorpiuS/Project-Week-8-Final-Project/blob/
 
 Once we are done with the EDA, we gonna try several methods of Machine Learning to see which model is the most accurate.
 
-link to the Machine Learning notebook
+link to the [Machine-Learning](https://github.com/Zak-ScorpiuS/Project-Week-8-Final-Project/blob/master/code/Machine%20Learning.ipynb "Machine-Learning") notebook
 
 as the results were not as expected, let's scale our data and try again
 
-link to the Scaled data Machine Learning notebook
+link to the [Scaled](https://github.com/Zak-ScorpiuS/Project-Week-8-Final-Project/blob/master/code/Scaling.ipynb "Scaled") data Machine Learning notebook
 
 ## Conclusions ##
 
