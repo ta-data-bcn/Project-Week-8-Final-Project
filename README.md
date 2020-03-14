@@ -117,7 +117,7 @@ code:
 * Scaling.ipynb
 
 datasets:
-*heart.csv (original dataset from kaggle)
+* heart.csv (original dataset from kaggle)
 
 This README file
 
