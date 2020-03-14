@@ -123,7 +123,6 @@ This README file
 
 .gitignore file
 
-
 ## Links ##
 
 [Repository](https://github.com/Zak-ScorpiuS/Project-Week-8-Final-Project)  
