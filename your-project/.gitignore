@@ -23,6 +23,7 @@ ipython_config.py
 .LSOverride
 
 README.md
+chatgui.py
 
 # Icon must end with two \r
 Icon
