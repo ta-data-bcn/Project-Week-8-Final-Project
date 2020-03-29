@@ -8,10 +8,24 @@ from keras.models import load_model
 model = load_model('chatbot_model.h5')
 import json
 import random
+import pandas as pd
 intents = json.loads(open('intents.json').read())
 words = pickle.load(open('words.pkl','rb'))
 classes = pickle.load(open('classes.pkl','rb'))
+df_recommendations=pd.read_csv('../csv/DF_Recommendations.csv')
+df_recommendations=df_recommendations[df_recommendations.Market=='Africa'].reset_index()
+df_recommendations['Tag']=df_recommendations['Customer_Name']+'_'+df_recommendations['Market']
+df_recommendations['Tag']=df_recommendations['Tag'].str.replace(' ','_')
+dict_list=[]
+for i in range(df_recommendations.shape[0]):
 
+
+    data_dict={}
+    data_dict['tag']=df_recommendations['Tag'][i]
+    data_dict['patterns']=[df_recommendations['Customer_Name'][i]]
+    data_dict['responses']=['Check this out: '+df_recommendations['Recommendation1'][i],'Check this out: '+df_recommendations['Recommendation2'][i],'Check this out: '+df_recommendations['Recommendation3'][i],'Check this out: '+df_recommendations['Recommendation4'][i],'Check this out: '+df_recommendations['Recommendation5'][i]]
+    intents['intents'].append(data_dict)
+    
 
 def clean_up_sentence(sentence):
     # tokenize the pattern - split words into array
