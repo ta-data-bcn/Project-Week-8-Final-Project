@@ -1,9 +1,9 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
 # Title of My Project
-*[Your Name]*
+*[Gareth Hughes]*
 
-*[Your Cohort, Campus & Date]*
+*[Data Analytics, Barcelona,  May 2020]*
 
 ## Content
 - [Project Description](#project-description)
@@ -19,22 +19,32 @@
 - [Links](#links)
 
 ## Project Description
-Write a short description of your project: 3-5 sentences about what your project is about, why you chose this topic (if relevant), and what you are trying to show.
+In this project, my main objective is to train, test and apply a convolutional neural network which can be 
+applied to the detection of pneumonia, and COVID-19 induced pneumonia, using image classification. This would be 
+achieved by analysing computerized tomography (CT) scans from an anteroposterior (AP) perspective of the lungs.
+Ultimately, the aim of the project would be to develop a means of rapidly analysing Pneumonia, thereby saving time
+and offering radiologists and doctors a second opinion.
+The two datasets were obtained from Kaggle and the other from Github, they are referenced below. The first 
+dataset contains images of both pneumonia infected and normal CT scans as a means of training, testing and validation.
+The second dataset contains a mixture of CT scans of lungs infected by pneumonia caused by COVID-19. All the scans
+in the dataset are verified by radiologists. 
+
 
 ## Hypotheses / Questions
-* What data/business/research/personal question you would like to answer?
-* What is the context for the question and the possible scientific or business application?
-* What are the hypotheses you would like to test in order to answer your question?  
-Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
+* By analysing the image metadata, what age groups and gender have suffered from COVID-19?
+* Can we identify the presence of pneumonia using image recognition?
+* Are we able to differentiate between pneumonia and COVID induced pneumonia?
 
 ## Dataset
-* Where did you get your data? If you downloaded a dataset (either public or private), describe where you downloaded it and include the command to load the dataset.
-* Did you build your own datset? If so, did you use an API or a web scraper? PRovide the relevant scripts in your repo.
-* For all types of datasets, provide a description of the size, complexity, and data types included in your dataset, as well as a schema of the tables if necessary.
-* If the question cannot be answered with the available data, why not? What data would you need to answer it better?
+* [Github](https://github.com/UCSD-AI4H/COVID-CT)
+* [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
 
 ## Cleaning
-Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did as well as your reasoning behind the process.
+* The images obtained from the GitHub dataset needed to be categorised based on the type of illness
+that the patient suffered from, in order to ensure only COVID-19 images were being analysed.
+* Additionally, only the AP view of the CT scan was to be analysed, thus additional filtering was required.
+* All the images were resized to a standard size, decolourised and normalized in order to be fed into the
+CNN. 
 
 ## Analysis
 * Overview the general steps you went through to analyze your data in order to test your hypothesis.
@@ -43,16 +53,19 @@ Describe your full process of data wrangling and cleaning. Document why you chos
 * If you used Machine Learning in your final project, describe your feature selection process.
 
 ## Model Training and Evaluation
-*Include this section only if you chose to include ML in your project.*
-* Describe how you trained your model, the results you obtained, and how you evaluated those results.
+The model for the CNN is described in more detail below. 
 
 ## Conclusion
-* Summarize your results. What do they mean?
-* What can you say about your hypotheses?
-* Interpret your findings in terms of the questions you try to answer.
+* After tailoring the Convolutional Neural Network, by altering it's parameters and exploring several means of 
+filtering the data, a model with an accuracy of 86.2% for the analysis of normal vs. pneumonia AP CT scans 
+was obtained.
+* The model was then applied to the analysis of the COVID-19 infected pneumonia AP CT scans and an accuracy of 
+XX% was obtained. 
 
 ## Future Work
-Address any questions you were unable to answer, or any next steps or future extensions to your project.
+* Increase the size of the dataset for normal, pneumonia and COVID-19 induced pneumonia datasets.
+* Apply the CNN to deduce the difference between bacteria, viral and fungal pneumonia.
+* 
 
 ## Workflow
 Outline the workflow you used in your project. What were the steps?
