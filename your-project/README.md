@@ -28,7 +28,7 @@ My project is a complete growth marketing framework for an online store. Ranging
 Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
 
 ## Dataset
-* Where did I get the data? 
+### Where did I get the data? 
 
 I gathered it from [Kaggle] (https://www.kaggle.com/mkechinov/ecommerce-behavior-data-from-multi-category-store) I loaded the data as a CSV file to the repository in the directory 'data'. Loaded it to JupyterNotebook using the 'load_csv' function of the Pandas library.
 
@@ -36,7 +36,7 @@ Special thanks also to [REES46 Marketing Platform.] (https://rees46.com/)
 
 As both provided datasets are considerably large I sliced it to a smaller sample of 20000 rows.
 
-### File structure
+### Data structure
 #### event_time
 
 Time when event happened at (in UTC).
