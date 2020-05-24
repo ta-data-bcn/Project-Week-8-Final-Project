@@ -1,9 +1,9 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
 # Data fueled growth
-*[Francesco Baldissera]*
+*Francesco Baldissera*
 
-*[DAFT, Barcelona. March-2020]*
+*DAFT, Barcelona. March-2020*
 
 ## Content
 - [Project Description](#project-description)
@@ -30,11 +30,10 @@ Frame your hypothesis with statistical/data languages (i.e. define Null and Alte
 ## Dataset
 ### Where did I get the data? 
 
-I gathered it from [Kaggle] (https://www.kaggle.com/mkechinov/ecommerce-behavior-data-from-multi-category-store) I loaded the data as a CSV file to the repository in the directory 'data'. Loaded it to JupyterNotebook using the 'load_csv' function of the Pandas library.
+I gathered it from [Kaggle](https://www.kaggle.com/mkechinov/ecommerce-events-history-in-cosmetics-shop) I loaded the data as a CSV file to the repository in the directory 'data'. Loaded it to JupyterNotebook using the 'load_csv' function of the Pandas library.
 
-Special thanks also to [REES46 Marketing Platform.] (https://rees46.com/)
+Special thanks also to [REES46 Marketing Platform.](https://rees46.com/)
 
-As both provided datasets are considerably large I sliced it to a smaller sample of 20000 rows.
 
 ### Data structure
 #### event_time
