@@ -31,8 +31,8 @@ in the dataset are verified by radiologists.
 
 
 ## Hypotheses / Questions
-* By analysing the image metadata, what age groups and gender have suffered from COVID-19?
 * Can we identify the presence of pneumonia using image recognition?
+* How accurately can we identify pneumonia?
 * Are we able to differentiate between pneumonia and COVID induced pneumonia?
 
 ## Dataset
@@ -92,5 +92,5 @@ big to be uploaded to Github.
 ## Links
 
 [Repository](https://github.com/peiriant/Project-Week-8-Final-Project/tree/master/your-project)  
-[Slides](https://slides.com/)  
+[Slides](https://docs.google.com/presentation/d/1EOBTjrrSqtab0Yp7QVxBku-6PXEwTSGyHm1JzJkU20Q/edit?usp=sharing)  
 [Trello](https://trello.com/en)  
