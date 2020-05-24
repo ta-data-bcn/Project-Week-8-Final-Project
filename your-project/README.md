@@ -30,58 +30,25 @@ Frame your hypothesis with statistical/data languages (i.e. define Null and Alte
 ## Dataset
 ### Where did I get the data? 
 
-I gathered it from [Kaggle](https://www.kaggle.com/mkechinov/ecommerce-events-history-in-cosmetics-shop) I loaded the data as a CSV file to the repository in the directory 'data'. Loaded it to JupyterNotebook using the 'load_csv' function of the Pandas library.
-
-Special thanks also to [REES46 Marketing Platform.](https://rees46.com/)
+I gathered it from [Machine Learning UCI Repository](https://archive.ics.uci.edu/ml/datasets/Online+Retail+II) I loaded the data as a CSV file to the repository in the directory 'data'. Loaded it to JupyterNotebook using the 'load_csv' function of the Pandas library.
 
 
 ### Data structure
-#### event_time
+#### Data Set Information:
 
-Time when event happened at (in UTC).
+This Online Retail II data set contains all the transactions occurring for a UK-based and registered, non-store online retail between 01/12/2009 and 09/12/2011.The company mainly sells unique all-occasion gift-ware. Many customers of the company are wholesalers.
 
-#### event_type
 
-Events can be:
+#### Attribute Information:
 
-* view - a user viewed a product
-* cart - a user added a product to shopping cart
-* removefromcart - a user removed a product from shopping cart
-* purchase - a user purchased a product
-
-*Typical funnel:* view => cart => purchase.
-
-#### product_id
-
-ID of a product
-
-#### category_id
-
-Product's category ID
-
-#### category_code
-
-Product's category taxonomy (code name) if it was possible to make it. Usually present for meaningful categories and skipped for different kinds of accessories.
-
-#### brand
-
-Downcased string of brand name. Can be missed.
-
-#### price
-
-Float price of a product. Present.
-
-#### user_id
-
-Permanent user ID.
-
-#### user_session
-
-Temporary user's session ID. Same for each user's session. Is changed every time user come back to online store from a long pause.
-
-#### Multiple purchases per session
-A session can have multiple purchase events. It's ok, because it's a single order.
-
+* InvoiceNo: Invoice number. Nominal. A 6-digit integral number uniquely assigned to each transaction. If this code starts with the letter 'c', it indicates a cancellation.
+* StockCode: Product (item) code. Nominal. A 5-digit integral number uniquely assigned to each distinct product.
+* Description: Product (item) name. Nominal.
+* Quantity: The quantities of each product (item) per transaction. Numeric.
+* InvoiceDate: Invice date and time. Numeric. The day and time when a transaction was generated.
+* UnitPrice: Unit price. Numeric. Product price per unit in sterling (Â£).
+CustomerID: Customer number. Nominal. A 5-digit integral number uniquely assigned to each customer.
+Country: Country name. Nominal. The name of the country where a customer resides.
 
 ## Cleaning
 Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did as well as your reasoning behind the process.
