@@ -80,7 +80,7 @@ def get_jobs(ext, keyword, location, num_jobs, verbose):
                     time.sleep(5)
 
             try:
-                salary_estimate = driver.find_element_by_xpath('.//span[@class="gray small salary"]').text
+                salary_estimate = driver.find_element_by_xpath('.//span[@class="gray salary"]').text
             except NoSuchElementException:
                 salary_estimate = -1  # You need to set a "not found value. It's important."
 
@@ -197,14 +197,17 @@ def get_jobs(ext, keyword, location, num_jobs, verbose):
         try:
             driver.find_element_by_class_name('next').click()
         except NoSuchElementException:
-            print("Scraping terminated before reaching target number of jobs. Needed {}, got {}.".format(num_jobs,
-                                                                                                         len(jobs)))
+            print("Scraping terminated before reaching target number of jobs. Needed {}, got {}.".format(num_jobs,len(jobs)))
+
+            driver.quit()
             break
+
+    driver.quit()
 
     return pd.DataFrame(jobs)  # This line converts the dictionary object into a pandas DataFrame.
 
 loc = input('Write your desired city:\t')
 position = input('Write your desired position:\t')
 cant = input('How much jobs do you want?\t')
-df = get_jobs('es', position, loc, int(cant), False)
+df = get_jobs('co.uk', position, loc, int(cant), False)
 df.to_csv('../datasets/' + position.lower() + '-' + loc.lower() + '.csv')
