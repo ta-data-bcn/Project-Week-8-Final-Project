@@ -101,4 +101,4 @@ big to be uploaded to Github.
 
 [Repository](https://github.com/peiriant/Project-Week-8-Final-Project/tree/master/your-project)  
 [Slides](https://docs.google.com/presentation/d/1EOBTjrrSqtab0Yp7QVxBku-6PXEwTSGyHm1JzJkU20Q/edit?usp=sharing)  
-[Trello](https://trello.com/en)  
+[Trello](https://trello.com/b/CDl7EYhV/project-5)
