@@ -1,22 +1,34 @@
-from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+'''
+    Scraper Credits:
+    Owner: Ömer Sakarya
+    Article: https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905
+
+    Modified by Aitor
+
+'''
+
 import time
 import pandas as pd
+from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
 
 
-def get_jobs(ext, keyword, location, num_jobs, verbose):
+def get_jobs(ext, keyword, location, verbose):
     '''Gathers jobs as a dataframe, scraped from Glassdoor'''
 
     # Initializing the webdriver
-    options = webdriver.ChromeOptions()
+    #options = webdriver.ChromeOptions()
+    options = webdriver.chrome.options.Options()
+    options.headless(True)
 
     # Uncomment the line below if you'd like to scrape without a new Chrome window every time.
-    # options.add_argument('headless')
+    # options.add_argument('--headless')
 
     # Change the path to where chromedriver is in your home folder.
     driver = webdriver.Chrome(
-        executable_path="/usr/local/bin/chromedriver", options=options)
+        executable_path="/usr/local/bin/chromedriver", chrome_options=options)
     driver.set_window_size(1120, 1000)
 
     url = 'https://www.glassdoor.' + ext + '/Job/jobs.htm'
@@ -29,6 +41,16 @@ def get_jobs(ext, keyword, location, num_jobs, verbose):
         url = 'https://www.glassdoor.' + ext + '/Job/jobs.htm?sc.keyword=' + keyword + '&locT=C&locId=1147401&locKeyword=San%20Francisco,%20CA&jobType=all&fromAge=-1&minSalary=0&includeNoSalaryJobs=true&radius=100&cityId=-1&minRating=0.0&industryId=-1&sgocId=-1&seniorityType=all&companyId=-1&employerSizes=0&applicationType=0&remoteWorkType=0'
 
     jobs = []
+
+    # Get all the job offers
+    total_jobs = driver.find_element_by_xpath('.//p[@class="jobsCount"]').text
+    num_jobs = int(total_jobs.replace(' Jobs', ''))
+
+    # Accept cookies banner
+    try:
+        driver.find_element_by_id('onetrust-accept-btn-handler').click()  # accept cookies, yummy.
+    except:
+        pass
 
     while len(jobs) < num_jobs:  # If true, should be still looking for new jobs.
 
@@ -53,12 +75,6 @@ def get_jobs(ext, keyword, location, num_jobs, verbose):
         job_buttons = driver.find_elements_by_class_name(
             "jl")  # jl for Job Listing. These are the buttons we're going to click.
 
-        # Accept cookies banner
-        try:
-            driver.find_element_by_id('onetrust-accept-btn-handler').click()  # accept cookies, yummy.
-        except:
-            pass
-
         for job_button in job_buttons:
 
             print("Progress: {}".format("" + str(len(jobs)) + "/" + str(num_jobs)))
@@ -77,7 +93,7 @@ def get_jobs(ext, keyword, location, num_jobs, verbose):
                     job_description = driver.find_element_by_xpath('.//div[@class="jobDescriptionContent desc"]').text
                     collected_successfully = True
                 except:
-                    time.sleep(5)
+                    time.sleep(2)
 
             try:
                 salary_estimate = driver.find_element_by_xpath('.//span[@class="gray salary"]').text
@@ -203,11 +219,7 @@ def get_jobs(ext, keyword, location, num_jobs, verbose):
             break
 
     driver.quit()
+    df = pd.DataFrame(jobs)  # This line converts the dictionary object into a pandas DataFrame.
+    df.to_csv('../datasets/' + keyword.lower() + '-' + location.lower() + '.csv')    # This line exports the DataFrame into a CSV file.
+    return 'Done'
 
-    return pd.DataFrame(jobs)  # This line converts the dictionary object into a pandas DataFrame.
-
-loc = input('Write your desired city:\t')
-position = input('Write your desired position:\t')
-cant = input('How much jobs do you want?\t')
-df = get_jobs('co.uk', position, loc, int(cant), False)
-df.to_csv('../datasets/' + position.lower() + '-' + loc.lower() + '.csv')
