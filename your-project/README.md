@@ -49,6 +49,8 @@ CNN.
 
 ## Model Training and Evaluation
 The model for the CNN is described in more detail below. 
+- 1) Classification of Pneumonia and Normal lungs = 90% accurate
+- 2) Classification of Pneumonia / COVID-19 and Normal lungs = 85% accurate
 
 ## Conclusion
 * After tailoring the Convolutional Neural Network, by altering it's parameters and exploring several means of 
@@ -82,10 +84,12 @@ in the process.
 The data was then fed into the CNN and the accuracy and loss of the model was evaluated. A confusion matrix was also
 generated in order to determine the distribution of the CNN's predictions with regards to the prognosis (ie: normal / pneumonia lungs).
 The process was repeated with the addition of the COVID-19 image set. 
+
 This imageset contained numerous images from different
 positions, thus, using the metadata, only the correct AP (anterior posterior) images were utilised. 
 I explored using various methods to split and train the data in order to improve the accuracy of the model, whilst trying
-to avoid overfitting and underfitting. 
+to avoid overfitting and underfitting.
+ 
 In particular I utilised ImageDataGenerator, a function which automatically skews, rotates and 
 alters the zoom of images fed into the training and validation set. This means that the dataset is seeing new data continuously thus
 it helps avoid overfitting.
@@ -93,6 +97,8 @@ it helps avoid overfitting.
 ## Organization
 - I utilised a Trello board to map out my overall plan and for check-points along the way.
 - The work is organised into two Notebooks, which read chronologically describe the work process.
+- The first notebook details the development of a image classifier for the presence of pneumonia in X-Ray scans.
+- The second notebook details the development of a multi-class image classifier for COVID-19, Pneumonia and normal lungs.
 - The CNN_Models_Weights and Dataset folders contain text files with links to the models I utilised as they're both too
 big to be uploaded to Github.
 - The CNN_Models_Weights folder contains a link to a GoogleDrive which has the model and the weights for each notebook.
