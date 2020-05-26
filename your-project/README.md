@@ -36,9 +36,9 @@ in the dataset are verified by radiologists.
 * Are we able to differentiate between pneumonia and COVID induced pneumonia?
 
 ## Datasets
-* [Github](https://github.com/UCSD-AI4H/COVID-CT)
-* [Github](https://github.com/peiriant/COVID19)
-* [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
+* [Github](https://github.com/UCSD-AI4H/COVID-CT) - This repo contains COVID X-Ray images which I implimented into the dataset.
+* [Github](https://github.com/peiriant/COVID19) - This repo also contains COVID X-Ray images.
+* [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) - The kaggle contains a library of normal and pneumonia X-Rays.
 
 ## Cleaning
 * The images obtained from the GitHub dataset needed to be categorised based on the type of illness
