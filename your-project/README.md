@@ -1,9 +1,9 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Title of My Project
-*[Your Name]*
+# Global Warming, Can we solve it?
+*[Andreu Carreño Mateu]*
 
-*[Your Cohort, Campus & Date]*
+*[Data Analytics, Barcelona 29/05/2020]*
 
 ## Content
 - [Project Description](#project-description)
@@ -11,7 +11,6 @@
 - [Dataset](#dataset)
 - [Cleaning](#cleaning)
 - [Analysis](#analysis)
-- [Model Training and Evaluation](#model-training-and-evaluation)
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
 - [Workflow](#workflow)
@@ -19,54 +18,58 @@
 - [Links](#links)
 
 ## Project Description
-Write a short description of your project: 3-5 sentences about what your project is about, why you chose this topic (if relevant), and what you are trying to show.
+Even though nowadays the hottest topic is the current Covid crisis. I wanted to express through data, that Global Warming is not something we can't leave out to chance.
+I enjoyed the Machine Learning module, but for my Final project I choose to do a statistical analysis of the current Climate Change. 
+My goal was to see how much could I show using python and tableau about a topic that is always in my mind since I heard about it in school when Iwas a kid.
+I gathered numerous Global and Country indicators to show that the Climate Change issue is one that we need to tackle quickly and unanimously.
 
 ## Hypotheses / Questions
-* What data/business/research/personal question you would like to answer?
-* What is the context for the question and the possible scientific or business application?
-* What are the hypotheses you would like to test in order to answer your question?  
-Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
+- The first interest I wanted wasn't a question per se. I wanted to convince as many people as I coyld that we must take global warming seriously, because before solving a problem you have to ackowledge it.
+- The second thing I wanted to do was answer if this crisis can be solved somehow.
+
+- And finnaly, if it can be solvet, why are we not taking the needed action unanimously?
+
 
 ## Dataset
-* Where did you get your data? If you downloaded a dataset (either public or private), describe where you downloaded it and include the command to load the dataset.
-* Did you build your own datset? If so, did you use an API or a web scraper? PRovide the relevant scripts in your repo.
-* For all types of datasets, provide a description of the size, complexity, and data types included in your dataset, as well as a schema of the tables if necessary.
-* If the question cannot be answered with the available data, why not? What data would you need to answer it better?
+- for the datasets I used csv from the indicators I thought I would need. They are mainly from _Kaggle_ and _Our World in Data_.
+- It wasn't easy to find the porper data and hadto change directions a few times, but finnaly I found what I needed to tell my story.
+- Regarding the good results, I wish that there was even more data on the topic and more accurate data because I'm sure that the governments of certain countries don't give away the full information for obvious reasons.
 
 ## Cleaning
-Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did as well as your reasoning behind the process.
+- To clean the data I had to use few methods and functions from pandas in order to adapt them all so I could merge them and analyse the results in Tableau.
+- The main problem was to know exactly what I wanted to get out of each indicator to processit in the way the fit me the best.
 
 ## Analysis
-* Overview the general steps you went through to analyze your data in order to test your hypothesis.
-* Document each step of your data exploration and analysis.
-* Include charts to demonstrate the effect of your work.
-* If you used Machine Learning in your final project, describe your feature selection process.
+- the analysis is mainly based on correlations and timeseries progresion from certain indicators.
+- It's not a very complicated analysis, but I think it's power lays on it's simplicity. 
+- In just a few charts I'm able to show that the global warming is a real threat that we need to adress right now, even if it's through this Covid crisis.
 
-## Model Training and Evaluation
-*Include this section only if you chose to include ML in your project.*
-* Describe how you trained your model, the results you obtained, and how you evaluated those results.
 
 ## Conclusion
-* Summarize your results. What do they mean?
-* What can you say about your hypotheses?
-* Interpret your findings in terms of the questions you try to answer.
+ - If we don't reduce the CO emissions, mitigate deforestation and focus on renewable energies our future could be too hot for us the bear.
+ - We already solved together a big crisis with the ozone depletion, how come we can't do the same with the global warming?
+ - Descarted the excuse of the economic competitiveness, we can only assume that those making the desicions have interests in the highly contaminating fossil fuel industry.
 
 ## Future Work
-Address any questions you were unable to answer, or any next steps or future extensions to your project.
+- I would love to do this analysis again after this Crisis to see in what ways it has affected our planet's enviroment and the prespective in which we look at this issue.
+- I'm waiting to see if the USA does indeed withdraw from the Paris agreement this next November, because It could be the worst news for our future.
 
 ## Workflow
-Outline the workflow you used in your project. What were the steps?
-How did you test the accuracy of your analysis and/or machine learning algorithm?
+- I researched many topics, most of them about machine learning, but at the end I decided I felt more like doing a statistical analysis and test my visualization and storytelling skills (I'll be practising my ML skills everyday from now on).
+- I Researched for data, found messy datasets, serached again and so on until I found those datasets that I could clean and adapt for the analysis.
+- Here I started coding. I cleaned and merged the data sets.
+- I plotted some charts using matplotlib and them I moved on to tableau, where I performed my analysis.
+- I used my results to build the story I wanted to tell and then I made the presentation.
 
 ## Organization
-How did you organize your work? Did you use any tools like a trello or kanban board?
-
-What does your repository look like? Explain your folder and file structure.
+In the repository you will find:
+- The main Jupyter Notebook with the name of the project
+- A folder with all the images I used for the presentation and the notebook.
+- A folder with all the datasets used in the project.
+- This Readme file
 
 ## Links
-Include links to your repository, slides and trello/kanban board. Feel free to include any other links associated with your project.
 
-
-[Repository](https://github.com/)  
-[Slides](https://slides.com/)  
-[Trello](https://trello.com/en)  
+[Repository](https://github.com/andreuCM11/Project-Week-8-Final-Project)  
+[Slides](https://docs.google.com/presentation/d/1SYobI8pTTekKPECIG84-9INWj7PrG2xXutOTHXiTiII/edit#slide=id.g8079223f8a_0_37228)  
+[Trello](https://trello.com/b/Abpk4fft/ironhack-final-project)  
