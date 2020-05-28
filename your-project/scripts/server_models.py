@@ -95,7 +95,7 @@ np.mean(cross_val_score(rf,X_train,y_train,scoring = 'neg_mean_absolute_error', 
 
 # tune models GridsearchCV 
 from sklearn.model_selection import GridSearchCV
-parameters = {'n_estimators':range(10,300,10), 'criterion':('mse','mae'), 'max_features':('auto','sqrt','log2')}
+parameters = {'n_estimators':range(10,70,10), 'criterion':('mse','mae'), 'max_features':('auto','sqrt','log2')}
 
 gs = GridSearchCV(rf,parameters,scoring='neg_mean_absolute_error',cv=3)
 gs.fit(X_train,y_train)
@@ -121,12 +121,12 @@ mean_absolute_error(y_test,(tpred_lm+tpred_rf)/2)
 
 
 # In[ ]:
-
+# save the model trained
 import pickle
 pickl = {'model': gs.best_estimator_}
-pickle.dump( pickl, open( 'model_file' + ".p", "wb" ) )
+pickle.dump( pickl, open( '../models/model_file' + ".ai", "wb" ) )
 
-file_name = "model_file.p"
+file_name = '../models/model_file.ai'
 with open(file_name, 'rb') as pickled:
     data = pickle.load(pickled)
     model = data['model']

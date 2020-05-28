@@ -18,7 +18,7 @@ df['max_salary'] = min_hr.apply(lambda x: int(x.split('-')[1]))
 df['avg_salary'] = (df.min_salary + df.max_salary) / 2
 
 # Company name text only
-#df['company_txt'] = df.apply(lambda x: x['Company Name'] if x['Rating'] < 0 else x['Company Name'][:-3], axis=1)
+df['company_txt'] = df.apply(lambda x: x['Company Name'] if x['Rating'] < 0 else x['Company Name'][:-3], axis=1)
 
 # state field
 df['job_state'] = df['Location'].apply(lambda x: x.split(',')[1])
@@ -49,6 +49,14 @@ df.aws.value_counts()
 # excel
 df['excel'] = df['Job Description'].apply(lambda x: 1 if 'excel' in x.lower() else 0)
 df.excel.value_counts()
+
+#sql
+df['sql'] = df['Job Description'].apply(lambda x: 1 if 'sql' in x.lower() else 0)
+df.sql.value_counts()
+
+# tableau
+df['tableau'] = df['Job Description'].apply(lambda x: 1 if 'tableau' in x.lower() else 0)
+df.sql.value_counts()
 
 df.columns
 
