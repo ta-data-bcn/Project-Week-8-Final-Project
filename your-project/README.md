@@ -19,20 +19,20 @@
 - [Links](#links)
 
 ## Project Description
-In this project, my main objective is to train, test and apply a convolutional neural network which can be 
-applied to the detection of pneumonia, and COVID-19 induced pneumonia, using image classification. This would be 
-achieved by analysing X-Ray scans from an anteroposterior (AP) perspective of the lungs.
-Ultimately, the aim of the project would be to develop a means of rapidly analysing Pneumonia, thereby saving time
+In this project, my main objective is to be able to successfully differentiate between pneumonia, COVID-19 
+and normal lungs using a convolutional neural network using image classification. This would be 
+achieved by analysing X-Ray scans from an anteroposterior, ie: from front to back, perspective of the lungs.
+Ultimately, the aim of the project would be to develop a means of rapidly analysing pneumonia, and pneumonia induced by COVID, thereby saving time
 and offering radiologists and doctors a second opinion.
-The two datasets were obtained from Kaggle and the other from Github, they are referenced below. The first 
+The datasets were obtained from Kaggle and the other from Github, they are referenced below. The first 
 dataset contains images of both pneumonia infected and normal X-Ray scans as a means of training, testing and validation.
-The second dataset contains a mixture of X-Ray scans of lungs infected by pneumonia caused by COVID-19. All the scans
+The other datasets contains a mixture of X-Ray scans of lungs infected by pneumonia caused by COVID-19. All the scans
 in the dataset are verified by radiologists. 
 
 
 ## Hypotheses / Questions
 * Can we identify the presence of pneumonia using image recognition?
-* How accurately can we identify pneumonia?
+* How accurately can we identify pneumonia and COVID?
 * Are we able to differentiate between pneumonia and COVID induced pneumonia?
 
 ## Datasets
@@ -46,6 +46,7 @@ that the patient suffered from, in order to ensure only COVID-19 images were bei
 * Additionally, only the AP view of the X-Ray scan was to be analysed, thus additional filtering was required.
 * All the images were resized to a standard size, decolourised and normalized in order to be fed into the
 CNN. 
+* Various different parameters for the importing, normalizing and mean reduction of the image were investigated.
 
 ## Model Training and Evaluation
 The model for the CNN is described in more detail below. 
@@ -85,11 +86,10 @@ The data was then fed into the CNN and the accuracy and loss of the model was ev
 generated in order to determine the distribution of the CNN's predictions with regards to the prognosis (ie: normal / pneumonia lungs).
 The process was repeated with the addition of the COVID-19 image set. 
 
-This imageset contained numerous images from different
+This imageset contained numerous images from different 
 positions, thus, using the metadata, only the correct AP (anterior posterior) images were utilised. 
 I explored using various methods to split and train the data in order to improve the accuracy of the model, whilst trying
-to avoid overfitting and underfitting.
- 
+to avoid overfitting and underfitting. 
 In particular I utilised ImageDataGenerator, a function which automatically skews, rotates and 
 alters the zoom of images fed into the training and validation set. This means that the dataset is seeing new data continuously thus
 it helps avoid overfitting.
@@ -97,8 +97,8 @@ it helps avoid overfitting.
 ## Organization
 - I utilised a Trello board to map out my overall plan and for check-points along the way.
 - The work is organised into two Notebooks, which read chronologically describe the work process.
-- The first notebook details the development of a image classifier for the presence of pneumonia in X-Ray scans.
-- The second notebook details the development of a multi-class image classifier for COVID-19, Pneumonia and normal lungs.
+- The first notebook (01 Image Processing_CNN Model_Pneumonia.ipynb) details the development of a image classifier for the presence of pneumonia in X-Ray scans.
+- The second notebook (02 Image Processing_CNN Pneumonia_and_COVID19.ipynb) details the development of a multi-class image classifier for COVID-19, Pneumonia and normal lungs.
 - The CNN_Models_Weights and Dataset folders contain text files with links to the models I utilised as they're both too
 big to be uploaded to Github.
 - The CNN_Models_Weights folder contains a link to a GoogleDrive which has the model and the weights for each notebook.
