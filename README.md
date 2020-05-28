@@ -1,9 +1,9 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
 # Title of My Project
-*[Your Name]*
+*Victoria Zauner*
 
-*[Your Cohort, Campus & Date]*
+*DAFT BCN 03/20]*
 
 ## Content
 - [Project Description](#project-description)
