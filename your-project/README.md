@@ -1,6 +1,6 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Data fueled growth
+# ML Growth Hacking
 *Francesco Baldissera*
 
 *DAFT, Barcelona. March-2020*
@@ -19,13 +19,19 @@
 - [Links](#links)
 
 ## Project Description
-My project is a complete growth marketing framework for an online store. Ranging from analysis of the data, customer segmentation and sales predictions. This is intended to be used as a starting point to analyze how well does an online store does and gather insights on next actions to make it grow. Even if it's aimed at a marketplace business type it can be tweaked for any other kind of online business.
+Introduction
+One of the major innovations in the digital marketing industry is optimizing your processes by using different machine learning algorithms to feed your marketing intelligence.
 
-## Hypotheses / Questions
-* What data/business/research/personal question you would like to answer?
-* What is the context for the question and the possible scientific or business application?
-* What are the hypotheses you would like to test in order to answer your question?  
-Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
+This tools could be crucial to truly hack your growth and boost the efficiency of your sales team. The main objectives of this paper are to use both unsupervised as unsupervised machine learning algorithm to first do a customer segmentation over CRM data and then try to predict customers subscribing/buying/registaring to a product/service.
+
+This is intended as a framework to apply for fueling market intelligence in any given customer oriented company.
+
+## Hypotheses / Questions:
+The paper main objectives are divided as such:
+
+Campaign Marketing Customer Segmentation: Using K-means unsupervised learning algorithm to stretch the RFM growth market model and clusterize clients according to those three criterions.
+
+Predictions: Using supervised learning to predict if a customer will subscribe a term deposit
 
 ## Dataset
 ### Where did I get the data? 
@@ -36,54 +42,40 @@ I gathered it from [Machine Learning UCI Repository](https://archive.ics.uci.edu
 ### Data structure
 #### Data Set Information:
 
-This Online Retail II data set contains all the transactions occurring for a UK-based and registered, non-store online retail between 01/12/2009 and 09/12/2011.The company mainly sells unique all-occasion gift-ware. Many customers of the company are wholesalers.
+The data is related with direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed.
 
-
-#### Attribute Information:
-
-* InvoiceNo: Invoice number. Nominal. A 6-digit integral number uniquely assigned to each transaction. If this code starts with the letter 'c', it indicates a cancellation.
-* StockCode: Product (item) code. Nominal. A 5-digit integral number uniquely assigned to each distinct product.
-* Description: Product (item) name. Nominal.
-* Quantity: The quantities of each product (item) per transaction. Numeric.
-* InvoiceDate: Invice date and time. Numeric. The day and time when a transaction was generated.
-* UnitPrice: Unit price. Numeric. Product price per unit in sterling (Â£).
-CustomerID: Customer number. Nominal. A 5-digit integral number uniquely assigned to each customer.
-Country: Country name. Nominal. The name of the country where a customer resides.
 
 ## Cleaning
-Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did as well as your reasoning behind the process.
+Data was pretty clena althought I decided to drop some columns that didn't make much sense to have for predicting the desired outcome.
 
 ## Analysis
-* Overview the general steps you went through to analyze your data in order to test your hypothesis.
-* Document each step of your data exploration and analysis.
-* Include charts to demonstrate the effect of your work.
-* If you used Machine Learning in your final project, describe your feature selection process.
+* Exploratory Data Analysis. Distribution of features and target.
+* K-Means clustering using the elbow method and strategic marketing approach. Analyzed the "area under the curve" for the ROC graph.
+* Logistic Regression for the two types of features, discovered that for categorical features the DecissionTree algorithm works better.
 
 ## Model Training and Evaluation
-*Include this section only if you chose to include ML in your project.*
-* Describe how you trained your model, the results you obtained, and how you evaluated those results.
+* Data splitted 80% train and 20% test for Logistic Regression and 95% train 5% test for DT.
+* Accuracy 89% for LR and 88% for DT
 
 ## Conclusion
-* Summarize your results. What do they mean?
-* What can you say about your hypotheses?
-* Interpret your findings in terms of the questions you try to answer.
+* Data Analysis and its structure is key to perform good GrowthHacking tactics. Its a starting point where marketers should always formulate hypothesis, test and optimize.
 
 ## Future Work
-Address any questions you were unable to answer, or any next steps or future extensions to your project.
+* Perform A/B test on future campaigns 
+* Deploy the algorithms to perform real time classification and predictions
 
 ## Workflow
-Outline the workflow you used in your project. What were the steps?
-How did you test the accuracy of your analysis and/or machine learning algorithm?
+* Data Gathering
+* EDA
+* Built machine learning algorithms
+* K-means using the Elbow Method
+* Tested them using sklearn performance statistics
 
 ## Organization
-How did you organize your work? Did you use any tools like a trello or kanban board?
-
-What does your repository look like? Explain your folder and file structure.
+* Kanban board on Trello
+* Jupyter Notebook paper
 
 ## Links
-Include links to your repository, slides and trello/kanban board. Feel free to include any other links associated with your project.
-
-
 [Repository](https://github.com/franbaldi/Project-Week-8-Final-Project)  
-[Slides](https://slides.com/)  
+[Slides](https://drive.google.com/file/d/17oQQpQeBTHpaNoRUJ1cSfKRy0ENxQAMZ/view?usp=sharing)  
 [Trello](https://trello.com/invite/b/9HgRmLlo/b4ab49219ae21ae052c2c83dd935372b/final-project-data-fueling-growth)  
