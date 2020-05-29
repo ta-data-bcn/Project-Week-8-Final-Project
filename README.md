@@ -105,7 +105,7 @@ My repository is organized in two folders: data and code.
 
 *Code*
 
-Includes the 9 Jupyter Notbooks mentioned above as well as one Master Notebook, which includes the most important snippits of code condensed alongside careful detailes markdown.
+Includes the 9 Jupyter Notbooks mentioned above.
 
 Also you find the saved model (Random Forests for each of the four Personality Features on the reduced and scaled nlp data)
 
