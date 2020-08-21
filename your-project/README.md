@@ -38,7 +38,7 @@ The data set used is the created by Hughes and Salathé (2015) in order to preci
 * For all types of datasets, provide a description of the size, complexity, and data types included in your dataset, as well as a schema of the tables if necessary.
 The Plant village dataset is available with and without data augmentation and it contains information about 14 crop species from which only 9 (those that also had information about the diseased plant) were used. Each species and condition (eg: healthy, black rot or mildery powder) were placed in a folder and would contain at least 1000 pictures (.jpg) if not more. Data was distributed in alternative folders so it would be separate between the data required for the train set (around 77 %), for the validation (around 15 %) and for the test (around 8 %). Therefore, the data structure that I had was the following:
 
-<img src="https://github.com/mg365/Project-Week-8-Final-Project/blob/master/images/folder%20structure.png" alt="Folder structure" width="100"/>
+<img src="https://github.com/mg365/Project-Week-8-Final-Project/blob/master/images/folder%20structure.png" alt="Folder structure" width="500"/>
 
 Although the dataset was large enough to perfom the convolutional neural network models, the images were not varied enough (they all followed the same structure) or had the best image quality (some were blurred) and so, it would be prefered to redo the dataset oneself.
 
