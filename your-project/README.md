@@ -1,9 +1,9 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
 # Title of My Project
-*[Your Name]*
+*Mireia Guinovart*
 
-*[Your Cohort, Campus & Date]*
+*[0620, Iornahck-Barcelona & August 2020]*
 
 ## Content
 - [Project Description](#project-description)
@@ -19,7 +19,8 @@
 - [Links](#links)
 
 ## Project Description
-Write a short description of your project: 3-5 sentences about what your project is about, why you chose this topic (if relevant), and what you are trying to show.
+
+Have you ever had a plant that was dying and you had no clue why? This project pretends to put an end to that by creating an image recognition model that will not only tell you what the problem is but that it will also tell you the solution. Welcome to the modern era!
 
 ## Hypotheses / Questions
 * What data/business/research/personal question you would like to answer?
