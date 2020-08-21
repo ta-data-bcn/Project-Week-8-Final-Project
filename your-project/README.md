@@ -25,6 +25,7 @@ Have you ever had a plant that was dying and you had no clue why? This project p
 ## Hypotheses / Questions
 My main questions were the following:
 * Why is my plant dying? which illness does it have? how do I treat it?
+
 I did not have hypotheses for this project since it was primarely dedicated to a visual identification model that could predict whether the plant was sick and of what. Ideally it would also give you a simple, straight forward solution with simple non technical vocabulary and easy to apply at home.
 The motivation for the project was the lack of apps that can actually tell you what is wrong and provide help that is useful.
 
@@ -35,7 +36,7 @@ The motivation for the project was the lack of apps that can actually tell you w
 The initial idea was to create a dataset of my own but due to time restrictions an alreeady available dataset had to be used.
 The data set used is the created by Hughes and Salathé (2015) in order to precisely enable mobile disease diagnostics that can be fully download on https://data.mendeley.com/datasets/tywbtsjrjv/1 or partially download on https://github.com/spMohanty/PlantVillage-Dataset
 
-* For all types of datasets, provide a description of the size, complexity, and data types included in your dataset, as well as a schema of the tables if necessary.
+
 The Plant village dataset is available with and without data augmentation and it contains information about 14 crop species from which only 9 (those that also had information about the diseased plant) were used. Each species and condition (eg: healthy, black rot or mildery powder) were placed in a folder and would contain at least 1000 pictures (.jpg) if not more. Data was distributed in alternative folders so it would be separate between the data required for the train set (around 77 %), for the validation (around 15 %) and for the test (around 8 %). Therefore, the data structure that I had was the following:
 
 <img src="https://github.com/mg365/Project-Week-8-Final-Project/blob/master/images/folder%20structure.png" alt="Folder structure" width="500"/>
