@@ -1,6 +1,6 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Title of My Project
+# Woodoc: the plant disease identifier
 *Mireia Guinovart*
 
 *[0620, Iornahck-Barcelona & August 2020]*
@@ -23,24 +23,30 @@
 Have you ever had a plant that was dying and you had no clue why? This project pretends to put an end to that by creating an image recognition model that will not only tell you what the problem is but that it will also tell you the solution. Welcome to the modern era!
 
 ## Hypotheses / Questions
-* What data/business/research/personal question you would like to answer?
-* What is the context for the question and the possible scientific or business application?
-* What are the hypotheses you would like to test in order to answer your question?  
-Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
+My main questions were the following:
+* Why is my plant dying? which illness does it have? how do I treat it?
+I did not have hypotheses for this project since it was primarely dedicated to a visual identification model that could predict whether the plant was sick and of what. Ideally it would also give you a simple, straight forward solution with simple non technical vocabulary and easy to apply at home.
+The motivation for the project was the lack of apps that can actually tell you what is wrong and provide help that is useful.
+
+
 
 ## Dataset
-* Where did you get your data? If you downloaded a dataset (either public or private), describe where you downloaded it and include the command to load the dataset.
-* Did you build your own datset? If so, did you use an API or a web scraper? PRovide the relevant scripts in your repo.
+
+The initial idea was to create a dataset of my own but due to time restrictions an alreeady available dataset had to be used.
+The data set used is the created by Hughes and Salathé (2015) in order to precisely enable mobile disease diagnostics that can be fully download on https://data.mendeley.com/datasets/tywbtsjrjv/1 or partially download on https://github.com/spMohanty/PlantVillage-Dataset
+
 * For all types of datasets, provide a description of the size, complexity, and data types included in your dataset, as well as a schema of the tables if necessary.
-* If the question cannot be answered with the available data, why not? What data would you need to answer it better?
+The Plant village dataset is available with and without data augmentation and it contains information about 14 crop species from which only 9 (those that also had information about the diseased plant) were used. Each species and condition (eg: healthy, black rot or mildery powder) were placed in a folder and would contain at least 1000 pictures (.jpg) if not more. Data was distributed in alternative folders so it would be separate between the data required for the train set (around 77 %), for the validation (around 15 %) and for the test (around 8 %). Therefore, the data structure that I had was the following:
+
+<img src="https://github.com/mg365/Project-Week-8-Final-Project/blob/master/images/folder%20structure.png" alt="Folder structure" width="100"/>
+
+Although the dataset was large enough to perfom the convolutional neural network models, the images were not varied enough (they all followed the same structure) or had the best image quality (some were blurred) and so, it would be prefered to redo the dataset oneself.
 
 ## Cleaning
-Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did as well as your reasoning behind the process.
+Data cleaning consisted in data renaming and reformating to be able to get analised by the neural network model. It consisted in renaming the images and the folders as well as to order them using the appropiate structure and altering to pass them through the model.
 
 ## Analysis
-* Overview the general steps you went through to analyze your data in order to test your hypothesis.
-* Document each step of your data exploration and analysis.
-* Include charts to demonstrate the effect of your work.
+
 * If you used Machine Learning in your final project, describe your feature selection process.
 
 ## Model Training and Evaluation
@@ -53,21 +59,34 @@ Describe your full process of data wrangling and cleaning. Document why you chos
 * Interpret your findings in terms of the questions you try to answer.
 
 ## Future Work
-Address any questions you were unable to answer, or any next steps or future extensions to your project.
+The model needs to be retrained with more varied images and of typical household species so it is useful. Moreover, in order to be user-friendly, it needs a user interface that allows people to actually use it.
 
 ## Workflow
-Outline the workflow you used in your project. What were the steps?
-How did you test the accuracy of your analysis and/or machine learning algorithm?
+The steps that I followed were:
+- find dataset
+- rename dataset
+- structure dataset
+- preprocess data set
+- create VGG16 altered model
+- fit the model to my data
+- check accuracy
+- test the model
+
+Accuracy was tested using pictures not included in the modelling and also images available in google.
 
 ## Organization
-How did you organize your work? Did you use any tools like a trello or kanban board?
+The work structure was initially and also later designed in an analogic way in order to describe the idea, the model, the user interface, the presentation and the article.
 
 What does your repository look like? Explain your folder and file structure.
+The repository is structure in two main folders one that includes all the jupyter notebooks with the code used to perform the data preprocessing and the models and another with images necessary for the readme explanation and so on.
+
+## References
+- Hughes, D., & Salathé, M. (2015). An open access repository of images on plant health to enable the development of mobile disease diagnostics. arXiv preprint arXiv:1511.08060.
 
 ## Links
 Include links to your repository, slides and trello/kanban board. Feel free to include any other links associated with your project.
 
 
-[Repository](https://github.com/)  
-[Slides](https://slides.com/)  
-[Trello](https://trello.com/en)  
+[Repository](https://github.com/mg365/Project-Week-8-Final-Project)  
+[Slides](https://docs.google.com/presentation/d/1a7bX3XEloPRaH4IqMNVdVLKxmUGP6gqi2twcYJcHhoE/edit#slide=id.g919713cf3c_0_623)  
+
