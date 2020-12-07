@@ -1,9 +1,9 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Title of My Project
-*[Your Name]*
+# Size & Intelligence in Dogs
+*Santiago Mougán*
 
-*[Your Cohort, Campus & Date]*
+*Data Analytics (BCN - 01/20)*
 
 ## Content
 - [Project Description](#project-description)
@@ -19,54 +19,64 @@
 - [Links](#links)
 
 ## Project Description
-Write a short description of your project: 3-5 sentences about what your project is about, why you chose this topic (if relevant), and what you are trying to show.
+Analysis and observations on size, mass and intelligence relationships on dogs, and exploration of prediction possibilities between this parameters.
 
 ## Hypotheses / Questions
-* What data/business/research/personal question you would like to answer?
-* What is the context for the question and the possible scientific or business application?
-* What are the hypotheses you would like to test in order to answer your question?  
-Frame your hypothesis with statistical/data languages (i.e. define Null and Alternative Hypothesis). You can use formulas if you want but that is not required.
+* Is there a connection between physical features and intelligence?
+* Can intelligence be predicted from physical features?
 
 ## Dataset
-* Where did you get your data? If you downloaded a dataset (either public or private), describe where you downloaded it and include the command to load the dataset.
-* Did you build your own datset? If so, did you use an API or a web scraper? PRovide the relevant scripts in your repo.
-* For all types of datasets, provide a description of the size, complexity, and data types included in your dataset, as well as a schema of the tables if necessary.
-* If the question cannot be answered with the available data, why not? What data would you need to answer it better?
+* Dataset on dog breeds and intelligence measurements from task competences from data.world.
+* Dataset on dog breeds related to height and weight from data.world.
+* Dataset with the info from the two main tables combined and clean.
 
 ## Cleaning
-Describe your full process of data wrangling and cleaning. Document why you chose to fill missing values, extract outliers, or create the variables you did as well as your reasoning behind the process.
+* The numerical measurements were actually strings, that had to be converted to integers. Also some non numerical characters had to be fixed.
+* Height and weight data were presented in pairs (minimun and maximum for each breed), so I converted them to unique (mean) values to ease the analysis.
+* Since height and weight data corresponded to specific breeds, the NaNs could be easily investigated and fixed one by one.
+* A few outlyiers were actually mistakes (e.g. weight value in the place of the height value), but again, easy to investigate and fix.
+* There were NaNs on intelligence measurementes with complete and good data about the tasks response, so it could be assigned to their correct measurements instead of deleted.
+* With the intelligence measurements fixed, there is no need for the details about tasks.
+* Once height, weight and intelligence classification are related and fixed, there is no need for the breed label.
 
 ## Analysis
-* Overview the general steps you went through to analyze your data in order to test your hypothesis.
-* Document each step of your data exploration and analysis.
-* Include charts to demonstrate the effect of your work.
-* If you used Machine Learning in your final project, describe your feature selection process.
+* First analysis with plotting of all parameters, getting an obvious relationship between height and weight.
+* Further analysis through observation of both physical parameters versus intelligence measurements.
+![Height&Weight vs Intelligence categories](https://raw.githubusercontent.com/Yaguit/Project-Week-8-Final-Project/master/your-project/HW-I.PNG)
+* The machine learning work was through clustering, since there are six defined intelligence groups.
 
 ## Model Training and Evaluation
-*Include this section only if you chose to include ML in your project.*
-* Describe how you trained your model, the results you obtained, and how you evaluated those results.
+All the data was clustered in six main groups, corresponding to the six intelligence categories. From this a function can be made to input new data on height and weight and get the corresponding intelligence level in return.
 
 ## Conclusion
-* Summarize your results. What do they mean?
-* What can you say about your hypotheses?
-* Interpret your findings in terms of the questions you try to answer.
+* Relationship between intelligence and height and weight is not obvious to the human eye.
+* The hypothesis of their relation should be discarded.
+* More information about other physical features may rescue a modified version of the hypothesis.
 
 ## Future Work
-Address any questions you were unable to answer, or any next steps or future extensions to your project.
+The relationship between height, weight and intelligence is not clear, so further investigation should be done to determine if phsysical differences and similarities between breeds are related to ther intelligence differences and similarities.
 
 ## Workflow
-Outline the workflow you used in your project. What were the steps?
-How did you test the accuracy of your analysis and/or machine learning algorithm?
+* Looking for topics and general ideas
+* I started growing interest in relationship between physical and mental features
+* Finding the data on dog intelligence and physical measurements
+* Once started the coding, ohter ideas were found and tested 
 
 ## Organization
-How did you organize your work? Did you use any tools like a trello or kanban board?
+Trello:
+* List of general brainstorm ideas
+* To do list
+* Tasks in progress
+* Tasks already done
 
-What does your repository look like? Explain your folder and file structure.
+Github repository:
+* Original datasets on .csv format
+* Jupyter notebook file with all the coding
+* Graph example image
+* ReadMe
 
 ## Links
-Include links to your repository, slides and trello/kanban board. Feel free to include any other links associated with your project.
 
-
-[Repository](https://github.com/)  
-[Slides](https://slides.com/)  
-[Trello](https://trello.com/en)  
+[Repository](https://github.com/Yaguit/Project-Week-8-Final-Project)  
+[Slides](https://slides.com/srmg/size-intelligence/#/)  
+[Trello](https://trello.com/b/PCUuBxi8/final-project)  
