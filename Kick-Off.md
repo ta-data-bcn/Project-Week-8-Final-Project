@@ -20,7 +20,7 @@ In this project, you will pick a topic of your choosing and perform an end-to-en
 
 ## Project Goals
 * Ask interesting and thoughful questions and find the data to answer them.
-* Focus on improving in areas that are hard for you or learning more about something with which you feel comfortable. 
+* Focus on improving in areas and/or tools that are hard for you or learning more about something with which you feel comfortable. You can also learn to use new tools related to data analysis, visualization, etc.
 * Apply the statistical and/or machine learning techniques we have learned.
 * Create useful and clear graphs.
 * Present your insights in a thoughtful, clear and accurate way.
@@ -42,7 +42,7 @@ In this project, you will pick a topic of your choosing and perform an end-to-en
 * A 5 minute presentation in the auditorium (+2 minutes of questions)
 * A 5 minute presentation for the jury (+5 minutes of questions)
 * Repository with your workflow + documentation + code. Even if you are working alone, you need to keep good practices!
-* The database where you have kept your data.  
+* The dataset where you have kept your data (if possible), as well as a description of it.
 
 <a name="schedule"></a>
 
@@ -57,37 +57,30 @@ In this project, you will pick a topic of your choosing and perform an end-to-en
 
 **NO CODE UNTIL HERE**
 
-*Monday morning*
-* Database schema validation.
-
 *Monday*
-* Data in the database.
+* Data analysis/ model training.
 
-*Tuesday evening*
-* Analysis validation.
+*Tuesday*
+* Analysis validation/ model fine-tunning.
 
-*Wednesday*
-* First rehearsal.
-
-*Thursday morning*
-* General rehearsal.
+*Wednesday - Thursday*
+* Preparation of presentation/paper.
 
 *Thursday evening*
-* Presentation!
+* Group rehersal!
 
 *Friday morning*
 * Jury presentation: they will select their two prefered projects.
-* We will vote for the third project to be presented at Friday's HackShow.
 
 *Friday evening. HACKSHOW!*
-* Auditorium presentation at 18:00.
+* Presentations at 18:00.
 * Vote for the winner of the HackShow.
 
 <a name="presentation"></a>
 
 ## Presentation
-* 5 minute presentation in the auditorium (+2 minutes of questions)
 * 5 minute presentation for the jury (+5 minutes of questions)
+* 5 minute presentation in Hackshow (+2 minutes of questions)
 
 <a name="tips-&-tricks"></a>
 
